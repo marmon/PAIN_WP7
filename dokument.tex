@@ -1,0 +1,42 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc} % Kodowanie UTF8
+\usepackage{polski} % Wsparcie dla PL
+\usepackage{listings}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref} % dla linkowania do stron www
+
+\begin{document}
+\title{Wprowadzenie do Windows Phone 7}
+\author{ Marek Lewandowski }
+\date{\today}
+
+
+
+\maketitle
+
+\abstract{treść streszczenia}
+
+\section{Wstęp}
+
+  \lstset{language=SQL, basicstyle=\footnotesize, numbers=left,
+numberstyle=\footnotesize, stepnumber=1, numbersep=10pt, breaklines=true,
+ caption = opis kodu,
+frame=shadowbox, rulesepcolor=\color{SkyBlue}}
+\begin{lstlisting}
+kod
+kod
+kod
+\end{lstlisting} 
+
+\section{Słowo końcowe}
+Koniec
+\\\\\\
+\emph{Źródła}:\\
+\href{http://www.google.pl}{google}\\
+
+
+\end{document}
